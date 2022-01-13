@@ -3,15 +3,19 @@ import { CommonModule } from '@angular/common';
 
 import { ViewsRoutingModule } from './views-routing.module';
 import { ViewsHomeComponent } from './views-home/views-home.component';
+import { SharedModule } from '../shared/shared.module';
+import { StatisticsComponent } from './statistics/statistics.component';
 
 
 @NgModule({
-  declarations: [
-    ViewsHomeComponent
-  ],
-  imports: [
-    CommonModule,
-    ViewsRoutingModule
-  ]
+    declarations: [
+        ViewsHomeComponent,
+        StatisticsComponent
+    ],
+    imports: [
+        CommonModule,
+        ViewsRoutingModule,
+        SharedModule
+    ]
 })
 export class ViewsModule { }
