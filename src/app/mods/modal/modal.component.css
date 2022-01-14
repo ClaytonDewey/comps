@@ -1,3 +1,15 @@
+.actions:empty {
+    display: none;
+}
+
+.actions-default {
+    display: none;
+}
+
+.actions:empty + .actions-default {
+    display: block;
+}
+
 .ui.modal>.close {
     top: 1.0535rem;
     right: 1rem;
